@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "measuredOn": "2026-08-14",
+  "status": "complete-with-declared-limits",
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "vramMiB": 32607
+  },
+  "runtime": {
+    "tag": "b10434",
+    "releaseCommit": "7e4c0a96880dae4fc4268ad441f8a6446bd5460a",
+    "cudaVersion": "13.3",
+    "binarySha256": "5f1f831bc21dcbff4ca40e05cb59dbcbc0802d20b2046540bbbf3bd45cd61610"
+  },
+  "artifacts": {
+    "model": {
+      "repository": "unsloth/Qwen3.8-27B-GGUF",
+      "revision": "430473d9d0e975450ce1f445642b6527cb4faea1",
+      "filename": "Qwen3.8-27B-UD-Q4_K_XL.gguf",
+      "bytes": 17923394624,
+      "sha256": "bee238bbeb3dc0a34bde4d0dedbaee1f98c009e8bb4226f03070054c12fb1372"
+    },
+    "mmproj": {
+      "repository": "unsloth/Qwen3.8-27B-GGUF",
+      "revision": "430473d9d0e975450ce1f445642b6527cb4faea1",
+      "filename": "mmproj-F16.gguf",
+      "bytes": 927607488,
+      "sha256": "cbb841a9ee0636b2ec172f5bb8df2ea8dfeb01e90fe7c6126581d662a0b4e43e"
+    },
+    "template": {
+      "repository": "Qwen/Qwen3.8-27B",
+      "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+      "filename": "chat_template.jinja",
+      "bytes": 8952,
+      "sha256": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041"
+    }
+  },
+  "profile": {
+    "contextTokens": 262144,
+    "parallelSlots": 1,
+    "kv": "q8_0/q8_0",
+    "batch": 256,
+    "ubatch": 256,
+    "mtp": {
+      "enabled": true,
+      "type": "draft-mtp",
+      "draftNMax": 2,
+      "draftPMin": 0.0
+    },
+    "vision": true,
+    "endpoint": "authenticated loopback 127.0.0.1:8080"
+  },
+  "mtpRuntime": {
+    "records": 43,
+    "draftTokensGenerated": 600,
+    "draftTokensAccepted": 509,
+    "acceptanceRate": 0.848333,
+    "recordAcceptanceMin": 0.66667,
+    "recordAcceptanceMax": 1.0,
+    "serverLogSha256": "46fb0624def4a7c297731236872275c50debc8d558b27a6753ceed1e368a6b01",
+    "unsupportedOrUnusedWarnings": 0
+  },
+  "requestGates": {
+    "thinkingReasoningEfforts": {"xhigh": true, "medium": true, "low": true},
+    "nonThinkingPreserveFalse": true,
+    "vision": true,
+    "toolsInitialCall": true,
+    "toolsContinuation": true,
+    "streaming": true,
+    "normalCanary": true
+  },
+  "decodeSmoke": {
+    "contract": "three unique non-thinking requests; seed 20260814; temperature 0; 64 completion-token bound",
+    "runs": [
+      {"wallSeconds": 0.49, "promptTokens": 58, "completionTokens": 6, "cacheTokens": 0},
+      {"wallSeconds": 0.22, "promptTokens": 57, "completionTokens": 6, "cacheTokens": 0},
+      {"wallSeconds": 0.202, "promptTokens": 54, "completionTokens": 6, "cacheTokens": 0}
+    ],
+    "note": "Smoke throughput sample; the full decode ladder is in qwen3.8-27b-rtx5090-b10434-3x500.json."
+  },
+  "contextCapacity": {
+    "serverContextTokens": 262144,
+    "ladder": [
+      {"targetTokens": 32768, "promptTokens": 32672, "completionTokens": 1, "wallSeconds": 13.139, "requestShapePassed": true, "cache_n": 0, "prompt_n": 32672, "promptPerSecond": 2538.9740126622314},
+      {"targetTokens": 65536, "promptTokens": 65437, "completionTokens": 1, "wallSeconds": 32.269, "requestShapePassed": true, "cache_n": 0, "prompt_n": 65437, "promptPerSecond": 2058.835105893129},
+      {"targetTokens": 131072, "promptTokens": 130975, "completionTokens": 1, "wallSeconds": 90.856, "requestShapePassed": true, "cache_n": 0, "prompt_n": 130975, "promptPerSecond": 1455.4933686899778},
+      {"targetTokens": 245760, "promptTokens": 245662, "completionTokens": 1, "wallSeconds": 251.628, "requestShapePassed": true, "cache_n": 0, "prompt_n": 245662, "promptPerSecond": 978.0608359955309}
+    ],
+    "nearCeilingStatus": "passed",
+    "nearCeilingTargetTokens": 245760,
+    "verifiedColdPromptCeilingTokens": 245760,
+    "slotEraseStatus": 501,
+    "native262144Claimed": false
+  },
+  "caveats": [
+    "All four b10434 cold-prefill requests passed completion, prompt-shape, cache_n=0, and timing validation through 245,760 tokens.",
+    "The slot erase endpoint returned HTTP 501, so unique nonces and observed cache_n=0 remain part of the cold-prefill contract.",
+    "The native 262,144-token context is enabled and served; the verified cold-prompt ceiling on this build is 245,760 tokens."
+  ]
+}

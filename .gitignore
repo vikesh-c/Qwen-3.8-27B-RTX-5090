@@ -1,0 +1,25 @@
+# Local configuration and secrets
+config/profile.json
+*.local.json
+.env
+.env.*
+secrets/
+*.key
+*.secret
+*.token
+
+# Runtime artifacts
+*.log
+logs/
+state/
+local/
+
+# Model and binary artifacts
+*.gguf
+*.bin
+*.dll
+*.exe
+*.zip
+
+# Benchmark output from the runner is written under the OS temporary directory.
+# Reviewed summaries under results/ are intentionally tracked.

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "profile": "qwen3.8-27b-rtx5090",
+  "operatingMode": "serial-one-model-at-a-time",
+  "host": "127.0.0.1",
+  "port": 8080,
+  "context": 262144,
+  "maxContext": 262144,
+  "parallel": 1,
+  "device": "CUDA0",
+  "flashAttention": true,
+  "cacheK": "q8_0",
+  "cacheV": "q8_0",
+  "batch": 256,
+  "ubatch": 256,
+  "runtimeRelativePath": "bin\\llama.cpp\\current\\llama-server.exe",
+  "runtimeManifestRelativePath": "bin\\llama.cpp\\current\\runtime-manifest.json",
+  "modelRelativePath": "models\\qwen3.8-27b\\Qwen3.8-27B-UD-Q4_K_XL.gguf",
+  "mmprojRelativePath": "models\\qwen3.8-27b\\mmproj-F16.gguf",
+  "logRelativePath": "logs\\qwen3.8-27b",
+  "stateRelativePath": "state\\qwen3.8-27b",
+  "modelId": "qwen3.8-27b",
+  "modelFile": "Qwen3.8-27B-UD-Q4_K_XL.gguf",
+  "apiKeyFileEnv": "LLAMA_SERVER_API_KEY_FILE",
+  "sampling": {
+    "thinking": {
+      "temperature": 1.0,
+      "topP": 0.95,
+      "topK": 20,
+      "minP": 0.0,
+      "presencePenalty": 0.0,
+      "repetitionPenalty": 1.0
+    },
+    "nonThinking": {
+      "temperature": 0.7,
+      "topP": 0.8,
+      "topK": 20,
+      "minP": 0.0,
+      "presencePenalty": 1.5,
+      "repetitionPenalty": 1.0
+    }
+  },
+  "reasoning": {
+    "thinkingDefault": true,
+    "preserveThinkingDefault": true,
+    "requestFields": [
+      "reasoning_effort",
+      "chat_template_kwargs.enable_thinking",
+      "chat_template_kwargs.preserve_thinking"
+    ],
+    "semanticSupportStatus": "probe-required"
+  },
+  "mtp": {
+    "enabled": true,
+    "type": "draft-mtp",
+    "draftNMax": 2,
+    "draftPMin": 0.0,
+    "preferred": true
+  },
+  "vision": {
+    "enabled": true,
+    "projectorRequired": true,
+    "videoSupport": "not claimed by this recipe"
+  },
+  "capacity": {
+    "nativeContextTokens": 262144,
+    "maxMeasuredPromptTokens": 245760,
+    "nearNative261120Status": "not-run-after-bounded-ladder",
+    "recommendedPromptCeilingUntilRerun": 245760
+  },
+  "artifacts": {
+    "modelSha256": "bee238bbeb3dc0a34bde4d0dedbaee1f98c009e8bb4226f03070054c12fb1372",
+    "mmprojSha256": "cbb841a9ee0636b2ec172f5bb8df2ea8dfeb01e90fe7c6126581d662a0b4e43e",
+    "artifactsNote": "Only the model and vision projector are hash-pinned. The llama.cpp runtime floats: bootstrap installs the latest stable release, verifies its published digests, and records the exact build in runtime-manifest.json."
+  },
+  "safety": {
+    "launchRequiresLoopback": true,
+    "launchRequiresOneSlot": true,
+    "launchRequiresPinnedHashes": true,
+    "apiKeyMustStayOutsideRepository": true,
+    "preCutoverQwen36RollbackRequired": true,
+    "humanCutoverConfirmationRequired": true
+  },
+  "apiKeyAutoCreate": true,
+  "apiKeyMustStayOutsideRepository": true
+}

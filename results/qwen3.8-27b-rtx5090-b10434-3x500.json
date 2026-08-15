@@ -1,0 +1,578 @@
+{
+    "metadata":  {
+                     "startedAt":  "2026-08-15T07:05:10.3755711+01:00",
+                     "complete":  true,
+                     "endpoint":  "loopback",
+                     "model":  "qwen3.8-27b",
+                     "runs":  3,
+                     "requiredCompletionTokens":  500,
+                     "temperature":  0,
+                     "seed":  20260814,
+                     "ignoreEos":  true,
+                     "contexts":  [
+                                      4096,
+                                      8192,
+                                      16384,
+                                      32768,
+                                      65536,
+                                      131072,
+                                      163840
+                                  ],
+                     "requiredContexts":  [
+                                              4096,
+                                              8192,
+                                              16384,
+                                              32768,
+                                              65536,
+                                              131072,
+                                              163840
+                                          ],
+                     "fullLadderRequested":  true,
+                     "completedContexts":  [
+                                               4096,
+                                               8192,
+                                               16384,
+                                               32768,
+                                               65536,
+                                               131072,
+                                               163840
+                                           ],
+                     "failedContexts":  [
+
+                                        ],
+                     "finishedAt":  "2026-08-15T07:09:28.2497746+01:00",
+                     "finalGpu":  {
+                                      "name":  "NVIDIA GeForce RTX 5090",
+                                      "usedMiB":  31285,
+                                      "totalMiB":  32607,
+                                      "freeMiB":  1322
+                                  }
+                 },
+    "ladder":  {
+                   "4096":  {
+                                "targetTokens":  4096,
+                                "valid":  true,
+                                "runs":  [
+                                             {
+                                                 "run":  1,
+                                                 "ok":  true,
+                                                 "wallSeconds":  6.415,
+                                                 "promptTokens":  4153,
+                                                 "completionTokens":  500,
+                                                 "decodeTokensPerSecond":  113.84737743782256,
+                                                 "beforeGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31285,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1322
+                                                               },
+                                                 "afterGpu":  {
+                                                                  "name":  "NVIDIA GeForce RTX 5090",
+                                                                  "usedMiB":  31285,
+                                                                  "totalMiB":  32607,
+                                                                  "freeMiB":  1322
+                                                              }
+                                             },
+                                             {
+                                                 "run":  2,
+                                                 "ok":  true,
+                                                 "wallSeconds":  4.397,
+                                                 "promptTokens":  4153,
+                                                 "completionTokens":  500,
+                                                 "decodeTokensPerSecond":  115.56846134373929,
+                                                 "beforeGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31285,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1322
+                                                               },
+                                                 "afterGpu":  {
+                                                                  "name":  "NVIDIA GeForce RTX 5090",
+                                                                  "usedMiB":  31285,
+                                                                  "totalMiB":  32607,
+                                                                  "freeMiB":  1322
+                                                              }
+                                             },
+                                             {
+                                                 "run":  3,
+                                                 "ok":  true,
+                                                 "wallSeconds":  4.392,
+                                                 "promptTokens":  4153,
+                                                 "completionTokens":  500,
+                                                 "decodeTokensPerSecond":  115.9272144363068,
+                                                 "beforeGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31285,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1322
+                                                               },
+                                                 "afterGpu":  {
+                                                                  "name":  "NVIDIA GeForce RTX 5090",
+                                                                  "usedMiB":  31285,
+                                                                  "totalMiB":  32607,
+                                                                  "freeMiB":  1322
+                                                              }
+                                             }
+                                         ],
+                                "average":  {
+                                                "runs":  3,
+                                                "promptTokens":  4153,
+                                                "completionTokens":  500,
+                                                "decodeTokensPerSecond":  115.11,
+                                                "wallSeconds":  5.068,
+                                                "averageSampledGpuUsedMiB":  31285,
+                                                "peakSampledGpuUsedMiB":  31285
+                                            }
+                            },
+                   "8192":  {
+                                "targetTokens":  8192,
+                                "valid":  true,
+                                "runs":  [
+                                             {
+                                                 "run":  1,
+                                                 "ok":  true,
+                                                 "wallSeconds":  7.344,
+                                                 "promptTokens":  8249,
+                                                 "completionTokens":  500,
+                                                 "decodeTokensPerSecond":  113.89009537325479,
+                                                 "beforeGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31285,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1322
+                                                               },
+                                                 "afterGpu":  {
+                                                                  "name":  "NVIDIA GeForce RTX 5090",
+                                                                  "usedMiB":  31285,
+                                                                  "totalMiB":  32607,
+                                                                  "freeMiB":  1322
+                                                              }
+                                             },
+                                             {
+                                                 "run":  2,
+                                                 "ok":  true,
+                                                 "wallSeconds":  4.436,
+                                                 "promptTokens":  8249,
+                                                 "completionTokens":  500,
+                                                 "decodeTokensPerSecond":  114.78444332650376,
+                                                 "beforeGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31285,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1322
+                                                               },
+                                                 "afterGpu":  {
+                                                                  "name":  "NVIDIA GeForce RTX 5090",
+                                                                  "usedMiB":  31285,
+                                                                  "totalMiB":  32607,
+                                                                  "freeMiB":  1322
+                                                              }
+                                             },
+                                             {
+                                                 "run":  3,
+                                                 "ok":  true,
+                                                 "wallSeconds":  4.443,
+                                                 "promptTokens":  8249,
+                                                 "completionTokens":  500,
+                                                 "decodeTokensPerSecond":  114.4780557726076,
+                                                 "beforeGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31285,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1322
+                                                               },
+                                                 "afterGpu":  {
+                                                                  "name":  "NVIDIA GeForce RTX 5090",
+                                                                  "usedMiB":  31285,
+                                                                  "totalMiB":  32607,
+                                                                  "freeMiB":  1322
+                                                              }
+                                             }
+                                         ],
+                                "average":  {
+                                                "runs":  3,
+                                                "promptTokens":  8249,
+                                                "completionTokens":  500,
+                                                "decodeTokensPerSecond":  114.38,
+                                                "wallSeconds":  5.408,
+                                                "averageSampledGpuUsedMiB":  31285,
+                                                "peakSampledGpuUsedMiB":  31285
+                                            }
+                            },
+                   "16384":  {
+                                 "targetTokens":  16384,
+                                 "valid":  true,
+                                 "runs":  [
+                                              {
+                                                  "run":  1,
+                                                  "ok":  true,
+                                                  "wallSeconds":  10.572,
+                                                  "promptTokens":  16441,
+                                                  "completionTokens":  500,
+                                                  "decodeTokensPerSecond":  110.06183534175965,
+                                                  "beforeGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31285,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1322
+                                                                },
+                                                  "afterGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31285,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1322
+                                                               }
+                                              },
+                                              {
+                                                  "run":  2,
+                                                  "ok":  true,
+                                                  "wallSeconds":  4.596,
+                                                  "promptTokens":  16441,
+                                                  "completionTokens":  500,
+                                                  "decodeTokensPerSecond":  111.2178961407613,
+                                                  "beforeGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31285,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1322
+                                                                },
+                                                  "afterGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31285,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1322
+                                                               }
+                                              },
+                                              {
+                                                  "run":  3,
+                                                  "ok":  true,
+                                                  "wallSeconds":  4.626,
+                                                  "promptTokens":  16441,
+                                                  "completionTokens":  500,
+                                                  "decodeTokensPerSecond":  110.5210013158422,
+                                                  "beforeGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31285,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1322
+                                                                },
+                                                  "afterGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31285,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1322
+                                                               }
+                                              }
+                                          ],
+                                 "average":  {
+                                                 "runs":  3,
+                                                 "promptTokens":  16441,
+                                                 "completionTokens":  500,
+                                                 "decodeTokensPerSecond":  110.6,
+                                                 "wallSeconds":  6.598,
+                                                 "averageSampledGpuUsedMiB":  31285,
+                                                 "peakSampledGpuUsedMiB":  31285
+                                             }
+                             },
+                   "32768":  {
+                                 "targetTokens":  32768,
+                                 "valid":  true,
+                                 "runs":  [
+                                              {
+                                                  "run":  1,
+                                                  "ok":  true,
+                                                  "wallSeconds":  11.93,
+                                                  "promptTokens":  32825,
+                                                  "completionTokens":  500,
+                                                  "decodeTokensPerSecond":  103.16075029082442,
+                                                  "beforeGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31285,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1322
+                                                                },
+                                                  "afterGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31285,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1322
+                                                               }
+                                              },
+                                              {
+                                                  "run":  2,
+                                                  "ok":  true,
+                                                  "wallSeconds":  5.026,
+                                                  "promptTokens":  32825,
+                                                  "completionTokens":  500,
+                                                  "decodeTokensPerSecond":  102.2099888859439,
+                                                  "beforeGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31285,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1322
+                                                                },
+                                                  "afterGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31285,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1322
+                                                               }
+                                              },
+                                              {
+                                                  "run":  3,
+                                                  "ok":  true,
+                                                  "wallSeconds":  5.004,
+                                                  "promptTokens":  32825,
+                                                  "completionTokens":  500,
+                                                  "decodeTokensPerSecond":  103.00950845885596,
+                                                  "beforeGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31285,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1322
+                                                                },
+                                                  "afterGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31285,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1322
+                                                               }
+                                              }
+                                          ],
+                                 "average":  {
+                                                 "runs":  3,
+                                                 "promptTokens":  32825,
+                                                 "completionTokens":  500,
+                                                 "decodeTokensPerSecond":  102.79,
+                                                 "wallSeconds":  7.32,
+                                                 "averageSampledGpuUsedMiB":  31285,
+                                                 "peakSampledGpuUsedMiB":  31285
+                                             }
+                             },
+                   "65536":  {
+                                 "targetTokens":  65536,
+                                 "valid":  true,
+                                 "runs":  [
+                                              {
+                                                  "run":  1,
+                                                  "ok":  true,
+                                                  "wallSeconds":  25.178,
+                                                  "promptTokens":  65593,
+                                                  "completionTokens":  500,
+                                                  "decodeTokensPerSecond":  90.248120840606077,
+                                                  "beforeGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31285,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1322
+                                                                },
+                                                  "afterGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31285,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1322
+                                                               }
+                                              },
+                                              {
+                                                  "run":  2,
+                                                  "ok":  true,
+                                                  "wallSeconds":  5.691,
+                                                  "promptTokens":  65593,
+                                                  "completionTokens":  500,
+                                                  "decodeTokensPerSecond":  91.733067436121445,
+                                                  "beforeGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31285,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1322
+                                                                },
+                                                  "afterGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31285,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1322
+                                                               }
+                                              },
+                                              {
+                                                  "run":  3,
+                                                  "ok":  true,
+                                                  "wallSeconds":  5.674,
+                                                  "promptTokens":  65593,
+                                                  "completionTokens":  500,
+                                                  "decodeTokensPerSecond":  92.0520014484816,
+                                                  "beforeGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31285,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1322
+                                                                },
+                                                  "afterGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31285,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1322
+                                                               }
+                                              }
+                                          ],
+                                 "average":  {
+                                                 "runs":  3,
+                                                 "promptTokens":  65593,
+                                                 "completionTokens":  500,
+                                                 "decodeTokensPerSecond":  91.34,
+                                                 "wallSeconds":  12.181,
+                                                 "averageSampledGpuUsedMiB":  31285,
+                                                 "peakSampledGpuUsedMiB":  31285
+                                             }
+                             },
+                   "131072":  {
+                                  "targetTokens":  131072,
+                                  "valid":  true,
+                                  "runs":  [
+                                               {
+                                                   "run":  1,
+                                                   "ok":  true,
+                                                   "wallSeconds":  65.804,
+                                                   "promptTokens":  131129,
+                                                   "completionTokens":  500,
+                                                   "decodeTokensPerSecond":  68.259049522145617,
+                                                   "beforeGpu":  {
+                                                                     "name":  "NVIDIA GeForce RTX 5090",
+                                                                     "usedMiB":  31285,
+                                                                     "totalMiB":  32607,
+                                                                     "freeMiB":  1322
+                                                                 },
+                                                   "afterGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31285,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1322
+                                                                }
+                                               },
+                                               {
+                                                   "run":  2,
+                                                   "ok":  true,
+                                                   "wallSeconds":  7.906,
+                                                   "promptTokens":  131129,
+                                                   "completionTokens":  500,
+                                                   "decodeTokensPerSecond":  67.6364752260739,
+                                                   "beforeGpu":  {
+                                                                     "name":  "NVIDIA GeForce RTX 5090",
+                                                                     "usedMiB":  31285,
+                                                                     "totalMiB":  32607,
+                                                                     "freeMiB":  1322
+                                                                 },
+                                                   "afterGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31285,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1322
+                                                                }
+                                               },
+                                               {
+                                                   "run":  3,
+                                                   "ok":  true,
+                                                   "wallSeconds":  7.806,
+                                                   "promptTokens":  131129,
+                                                   "completionTokens":  500,
+                                                   "decodeTokensPerSecond":  67.8426789456024,
+                                                   "beforeGpu":  {
+                                                                     "name":  "NVIDIA GeForce RTX 5090",
+                                                                     "usedMiB":  31285,
+                                                                     "totalMiB":  32607,
+                                                                     "freeMiB":  1322
+                                                                 },
+                                                   "afterGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31285,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1322
+                                                                }
+                                               }
+                                           ],
+                                  "average":  {
+                                                  "runs":  3,
+                                                  "promptTokens":  131129,
+                                                  "completionTokens":  500,
+                                                  "decodeTokensPerSecond":  67.91,
+                                                  "wallSeconds":  27.172,
+                                                  "averageSampledGpuUsedMiB":  31285,
+                                                  "peakSampledGpuUsedMiB":  31285
+                                              }
+                              },
+                   "163840":  {
+                                  "targetTokens":  163840,
+                                  "valid":  true,
+                                  "runs":  [
+                                               {
+                                                   "run":  1,
+                                                   "ok":  true,
+                                                   "wallSeconds":  47.38,
+                                                   "promptTokens":  163897,
+                                                   "completionTokens":  500,
+                                                   "decodeTokensPerSecond":  61.389166718952026,
+                                                   "beforeGpu":  {
+                                                                     "name":  "NVIDIA GeForce RTX 5090",
+                                                                     "usedMiB":  31285,
+                                                                     "totalMiB":  32607,
+                                                                     "freeMiB":  1322
+                                                                 },
+                                                   "afterGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31285,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1322
+                                                                }
+                                               },
+                                               {
+                                                   "run":  2,
+                                                   "ok":  true,
+                                                   "wallSeconds":  8.79,
+                                                   "promptTokens":  163897,
+                                                   "completionTokens":  500,
+                                                   "decodeTokensPerSecond":  60.839643160252479,
+                                                   "beforeGpu":  {
+                                                                     "name":  "NVIDIA GeForce RTX 5090",
+                                                                     "usedMiB":  31285,
+                                                                     "totalMiB":  32607,
+                                                                     "freeMiB":  1322
+                                                                 },
+                                                   "afterGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31285,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1322
+                                                                }
+                                               },
+                                               {
+                                                   "run":  3,
+                                                   "ok":  true,
+                                                   "wallSeconds":  8.705,
+                                                   "promptTokens":  163897,
+                                                   "completionTokens":  500,
+                                                   "decodeTokensPerSecond":  61.191255168760328,
+                                                   "beforeGpu":  {
+                                                                     "name":  "NVIDIA GeForce RTX 5090",
+                                                                     "usedMiB":  31285,
+                                                                     "totalMiB":  32607,
+                                                                     "freeMiB":  1322
+                                                                 },
+                                                   "afterGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31285,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1322
+                                                                }
+                                               }
+                                           ],
+                                  "average":  {
+                                                  "runs":  3,
+                                                  "promptTokens":  163897,
+                                                  "completionTokens":  500,
+                                                  "decodeTokensPerSecond":  61.14,
+                                                  "wallSeconds":  21.625,
+                                                  "averageSampledGpuUsedMiB":  31285,
+                                                  "peakSampledGpuUsedMiB":  31285
+                                              }
+                              }
+               }
+}

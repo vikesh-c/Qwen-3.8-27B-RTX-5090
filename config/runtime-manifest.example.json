@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "channel": "latest",
+  "tag": "b10434",
+  "releaseUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10434",
+  "releaseCommit": "7e4c0a96880dae4fc4268ad441f8a6446bd5460a",
+  "cudaVersion": "13.3",
+  "binaryRelativePath": "bin\\llama.cpp\\current\\llama-server.exe",
+  "binarySha256": "5f1f831bc21dcbff4ca40e05cb59dbcbc0802d20b2046540bbbf3bd45cd61610",
+  "assets": {
+    "llama-b10434-bin-win-cuda-13.3-x64.zip": {
+      "url": "https://github.com/ggml-org/llama.cpp/releases/download/b10434/llama-b10434-bin-win-cuda-13.3-x64.zip",
+      "sha256": "0162fa29e67a94c7422f5e2d2a56605fd0e4e95da8f2b6416f5927e6dc0aec99"
+    },
+    "cudart-llama-bin-win-cuda-13.3-x64.zip": {
+      "url": "https://github.com/ggml-org/llama.cpp/releases/download/b10434/cudart-llama-bin-win-cuda-13.3-x64.zip",
+      "sha256": "1462a050eb4c684921ba51dcc4cc488a036674c3e73e9945ee705b854808d03e"
+    }
+  },
+  "selectionNote": "Example of the manifest bootstrap writes. llama.cpp floats to the latest stable release; bootstrap verifies the release's published SHA-256 digests, records the exact build here, and runtime-manifest.json (not this example) is the integrity record on disk."
+}

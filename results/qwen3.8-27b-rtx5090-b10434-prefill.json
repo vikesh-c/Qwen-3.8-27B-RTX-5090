@@ -1,0 +1,920 @@
+{
+    "metadata":  {
+                     "startedAt":  "2026-08-15T09:48:31.2117886+01:00",
+                     "complete":  true,
+                     "endpoint":  "loopback",
+                     "model":  "qwen3.8-27b",
+                     "serverContextTokens":  262144,
+                     "runs":  3,
+                     "requiredCompletionTokens":  1,
+                     "requiredCachedPromptTokens":  0,
+                     "promptGeneratorVersion":  "cold-prefix-v1",
+                     "cacheControls":  {
+                                           "uniqueFirstContentNonce":  true,
+                                           "slotEraseBeforeEveryRun":  "attempted",
+                                           "requireCacheNCold":  "cache_n \u003c= 64 fixed chat-template preamble",
+                                           "requirePromptPlusCacheEqualsUsagePromptTokens":  true
+                                       },
+                     "contexts":  [
+                                      4096,
+                                      8192,
+                                      16384,
+                                      32768,
+                                      65536,
+                                      131072,
+                                      163840
+                                  ],
+                     "requiredContexts":  [
+                                              4096,
+                                              8192,
+                                              16384,
+                                              32768,
+                                              65536,
+                                              131072,
+                                              163840
+                                          ],
+                     "fullLadderRequested":  true,
+                     "completedContexts":  [
+                                               4096,
+                                               8192,
+                                               16384,
+                                               32768,
+                                               65536,
+                                               131072,
+                                               163840
+                                           ],
+                     "failedContexts":  [
+
+                                        ],
+                     "finishedAt":  "2026-08-15T10:02:29.9482262+01:00",
+                     "finalGpu":  {
+                                      "name":  "NVIDIA GeForce RTX 5090",
+                                      "usedMiB":  31271,
+                                      "totalMiB":  32607,
+                                      "freeMiB":  1336
+                                  }
+                 },
+    "ladder":  {
+                   "4096":  {
+                                "targetTokens":  4096,
+                                "valid":  true,
+                                "runs":  [
+                                             {
+                                                 "run":  1,
+                                                 "ok":  true,
+                                                 "wallSeconds":  3.007,
+                                                 "promptTokens":  4036,
+                                                 "completionTokens":  1,
+                                                 "timings":  {
+                                                                 "cache_n":  42,
+                                                                 "prompt_n":  3994,
+                                                                 "prompt_ms":  1634.118,
+                                                                 "prompt_per_second":  2444.13194151218,
+                                                                 "predicted_n":  1,
+                                                                 "predicted_ms":  0.001,
+                                                                 "predicted_per_second":  0
+                                                             },
+                                                 "cachedFraction":  0.010406342913776016,
+                                                 "timingRelativeError":  1.8605679307358207E-16,
+                                                 "errorCode":  null,
+                                                 "slotErase":  "unavailable-501",
+                                                 "beforeGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31271,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1336
+                                                               },
+                                                 "afterGpu":  {
+                                                                  "name":  "NVIDIA GeForce RTX 5090",
+                                                                  "usedMiB":  31261,
+                                                                  "totalMiB":  32607,
+                                                                  "freeMiB":  1346
+                                                              }
+                                             },
+                                             {
+                                                 "run":  2,
+                                                 "ok":  true,
+                                                 "wallSeconds":  1.844,
+                                                 "promptTokens":  4036,
+                                                 "completionTokens":  1,
+                                                 "timings":  {
+                                                                 "cache_n":  42,
+                                                                 "prompt_n":  3994,
+                                                                 "prompt_ms":  1477.866,
+                                                                 "prompt_per_second":  2702.5454269872907,
+                                                                 "predicted_n":  1,
+                                                                 "predicted_ms":  0.001,
+                                                                 "predicted_per_second":  0
+                                                             },
+                                                 "cachedFraction":  0.010406342913776016,
+                                                 "timingRelativeError":  1.6826631158366932E-16,
+                                                 "errorCode":  null,
+                                                 "slotErase":  "unavailable-501",
+                                                 "beforeGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31261,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1346
+                                                               },
+                                                 "afterGpu":  {
+                                                                  "name":  "NVIDIA GeForce RTX 5090",
+                                                                  "usedMiB":  31271,
+                                                                  "totalMiB":  32607,
+                                                                  "freeMiB":  1336
+                                                              }
+                                             },
+                                             {
+                                                 "run":  3,
+                                                 "ok":  true,
+                                                 "wallSeconds":  1.589,
+                                                 "promptTokens":  4036,
+                                                 "completionTokens":  1,
+                                                 "timings":  {
+                                                                 "cache_n":  42,
+                                                                 "prompt_n":  3994,
+                                                                 "prompt_ms":  1471.391,
+                                                                 "prompt_per_second":  2714.43824245221,
+                                                                 "predicted_n":  1,
+                                                                 "predicted_ms":  0.001,
+                                                                 "predicted_per_second":  0
+                                                             },
+                                                 "cachedFraction":  0.010406342913776016,
+                                                 "timingRelativeError":  0,
+                                                 "errorCode":  null,
+                                                 "slotErase":  "unavailable-501",
+                                                 "beforeGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31271,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1336
+                                                               },
+                                                 "afterGpu":  {
+                                                                  "name":  "NVIDIA GeForce RTX 5090",
+                                                                  "usedMiB":  31271,
+                                                                  "totalMiB":  32607,
+                                                                  "freeMiB":  1336
+                                                              }
+                                             }
+                                         ],
+                                "summary":  {
+                                                "runs":  3,
+                                                "promptTokens":  4036,
+                                                "mean":  {
+                                                             "prompt_n":  3994,
+                                                             "cache_n":  42,
+                                                             "prompt_ms":  1527.792,
+                                                             "prompt_per_second":  2620.37
+                                                         },
+                                                "best":  {
+                                                             "run":  3,
+                                                             "prompt_n":  3994,
+                                                             "cache_n":  42,
+                                                             "prompt_ms":  1471.391,
+                                                             "prompt_per_second":  2714.44
+                                                         },
+                                                "worstPrefillTokensPerSecond":  2444.13,
+                                                "averageWallSeconds":  2.147,
+                                                "averageEndpointSampledGpuUsedMiB":  31267.7,
+                                                "maximumEndpointSampledGpuUsedMiB":  31271
+                                            }
+                            },
+                   "8192":  {
+                                "targetTokens":  8192,
+                                "valid":  true,
+                                "runs":  [
+                                             {
+                                                 "run":  1,
+                                                 "ok":  true,
+                                                 "wallSeconds":  3.019,
+                                                 "promptTokens":  8132,
+                                                 "completionTokens":  1,
+                                                 "timings":  {
+                                                                 "cache_n":  42,
+                                                                 "prompt_n":  8090,
+                                                                 "prompt_ms":  2903.631,
+                                                                 "prompt_per_second":  2786.1666995565211,
+                                                                 "predicted_n":  1,
+                                                                 "predicted_ms":  0.001,
+                                                                 "predicted_per_second":  0
+                                                             },
+                                                 "cachedFraction":  0.0051647811116576486,
+                                                 "timingRelativeError":  0,
+                                                 "errorCode":  null,
+                                                 "slotErase":  "unavailable-501",
+                                                 "beforeGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31271,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1336
+                                                               },
+                                                 "afterGpu":  {
+                                                                  "name":  "NVIDIA GeForce RTX 5090",
+                                                                  "usedMiB":  31271,
+                                                                  "totalMiB":  32607,
+                                                                  "freeMiB":  1336
+                                                              }
+                                             },
+                                             {
+                                                 "run":  2,
+                                                 "ok":  true,
+                                                 "wallSeconds":  3.074,
+                                                 "promptTokens":  8132,
+                                                 "completionTokens":  1,
+                                                 "timings":  {
+                                                                 "cache_n":  42,
+                                                                 "prompt_n":  8090,
+                                                                 "prompt_ms":  2934.226,
+                                                                 "prompt_per_second":  2757.1155050769776,
+                                                                 "predicted_n":  1,
+                                                                 "predicted_ms":  0.001,
+                                                                 "predicted_per_second":  0
+                                                             },
+                                                 "cachedFraction":  0.0051647811116576486,
+                                                 "timingRelativeError":  0,
+                                                 "errorCode":  null,
+                                                 "slotErase":  "unavailable-501",
+                                                 "beforeGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31271,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1336
+                                                               },
+                                                 "afterGpu":  {
+                                                                  "name":  "NVIDIA GeForce RTX 5090",
+                                                                  "usedMiB":  31271,
+                                                                  "totalMiB":  32607,
+                                                                  "freeMiB":  1336
+                                                              }
+                                             },
+                                             {
+                                                 "run":  3,
+                                                 "ok":  true,
+                                                 "wallSeconds":  3.072,
+                                                 "promptTokens":  8132,
+                                                 "completionTokens":  1,
+                                                 "timings":  {
+                                                                 "cache_n":  42,
+                                                                 "prompt_n":  8090,
+                                                                 "prompt_ms":  2933.82,
+                                                                 "prompt_per_second":  2757.4970516255257,
+                                                                 "predicted_n":  1,
+                                                                 "predicted_ms":  0.001,
+                                                                 "predicted_per_second":  0
+                                                             },
+                                                 "cachedFraction":  0.0051647811116576486,
+                                                 "timingRelativeError":  1.6491308689465096E-16,
+                                                 "errorCode":  null,
+                                                 "slotErase":  "unavailable-501",
+                                                 "beforeGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31271,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1336
+                                                               },
+                                                 "afterGpu":  {
+                                                                  "name":  "NVIDIA GeForce RTX 5090",
+                                                                  "usedMiB":  31271,
+                                                                  "totalMiB":  32607,
+                                                                  "freeMiB":  1336
+                                                              }
+                                             }
+                                         ],
+                                "summary":  {
+                                                "runs":  3,
+                                                "promptTokens":  8132,
+                                                "mean":  {
+                                                             "prompt_n":  8090,
+                                                             "cache_n":  42,
+                                                             "prompt_ms":  2923.892,
+                                                             "prompt_per_second":  2766.93
+                                                         },
+                                                "best":  {
+                                                             "run":  1,
+                                                             "prompt_n":  8090,
+                                                             "cache_n":  42,
+                                                             "prompt_ms":  2903.631,
+                                                             "prompt_per_second":  2786.17
+                                                         },
+                                                "worstPrefillTokensPerSecond":  2757.12,
+                                                "averageWallSeconds":  3.055,
+                                                "averageEndpointSampledGpuUsedMiB":  31271,
+                                                "maximumEndpointSampledGpuUsedMiB":  31271
+                                            }
+                            },
+                   "16384":  {
+                                 "targetTokens":  16384,
+                                 "valid":  true,
+                                 "runs":  [
+                                              {
+                                                  "run":  1,
+                                                  "ok":  true,
+                                                  "wallSeconds":  6.159,
+                                                  "promptTokens":  16325,
+                                                  "completionTokens":  1,
+                                                  "timings":  {
+                                                                  "cache_n":  42,
+                                                                  "prompt_n":  16283,
+                                                                  "prompt_ms":  5997.253,
+                                                                  "prompt_per_second":  2715.0763858053015,
+                                                                  "predicted_n":  1,
+                                                                  "predicted_ms":  0.001,
+                                                                  "predicted_per_second":  0
+                                                              },
+                                                  "cachedFraction":  0.0025727411944869833,
+                                                  "timingRelativeError":  0,
+                                                  "errorCode":  null,
+                                                  "slotErase":  "unavailable-501",
+                                                  "beforeGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31271,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1336
+                                                                },
+                                                  "afterGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31221,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1386
+                                                               }
+                                              },
+                                              {
+                                                  "run":  2,
+                                                  "ok":  true,
+                                                  "wallSeconds":  6.166,
+                                                  "promptTokens":  16325,
+                                                  "completionTokens":  1,
+                                                  "timings":  {
+                                                                  "cache_n":  42,
+                                                                  "prompt_n":  16283,
+                                                                  "prompt_ms":  5975.418,
+                                                                  "prompt_per_second":  2724.9976487000572,
+                                                                  "predicted_n":  1,
+                                                                  "predicted_ms":  0.001,
+                                                                  "predicted_per_second":  0
+                                                              },
+                                                  "cachedFraction":  0.0025727411944869833,
+                                                  "timingRelativeError":  1.6687990578758791E-16,
+                                                  "errorCode":  null,
+                                                  "slotErase":  "unavailable-501",
+                                                  "beforeGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31221,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1386
+                                                                },
+                                                  "afterGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31221,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1386
+                                                               }
+                                              },
+                                              {
+                                                  "run":  3,
+                                                  "ok":  true,
+                                                  "wallSeconds":  6.2,
+                                                  "promptTokens":  16325,
+                                                  "completionTokens":  1,
+                                                  "timings":  {
+                                                                  "cache_n":  42,
+                                                                  "prompt_n":  16283,
+                                                                  "prompt_ms":  5971.904,
+                                                                  "prompt_per_second":  2726.60109740545,
+                                                                  "predicted_n":  1,
+                                                                  "predicted_ms":  0.001,
+                                                                  "predicted_per_second":  0
+                                                              },
+                                                  "cachedFraction":  0.0025727411944869833,
+                                                  "timingRelativeError":  0,
+                                                  "errorCode":  null,
+                                                  "slotErase":  "unavailable-501",
+                                                  "beforeGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31221,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1386
+                                                                },
+                                                  "afterGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31221,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1386
+                                                               }
+                                              }
+                                          ],
+                                 "summary":  {
+                                                 "runs":  3,
+                                                 "promptTokens":  16325,
+                                                 "mean":  {
+                                                              "prompt_n":  16283,
+                                                              "cache_n":  42,
+                                                              "prompt_ms":  5981.525,
+                                                              "prompt_per_second":  2722.23
+                                                          },
+                                                 "best":  {
+                                                              "run":  3,
+                                                              "prompt_n":  16283,
+                                                              "cache_n":  42,
+                                                              "prompt_ms":  5971.904,
+                                                              "prompt_per_second":  2726.6
+                                                          },
+                                                 "worstPrefillTokensPerSecond":  2715.08,
+                                                 "averageWallSeconds":  6.175,
+                                                 "averageEndpointSampledGpuUsedMiB":  31229.3,
+                                                 "maximumEndpointSampledGpuUsedMiB":  31271
+                                             }
+                             },
+                   "32768":  {
+                                 "targetTokens":  32768,
+                                 "valid":  true,
+                                 "runs":  [
+                                              {
+                                                  "run":  1,
+                                                  "ok":  true,
+                                                  "wallSeconds":  13.125,
+                                                  "promptTokens":  32709,
+                                                  "completionTokens":  1,
+                                                  "timings":  {
+                                                                  "cache_n":  42,
+                                                                  "prompt_n":  32667,
+                                                                  "prompt_ms":  12863.094,
+                                                                  "prompt_per_second":  2539.5911745649996,
+                                                                  "predicted_n":  1,
+                                                                  "predicted_ms":  0.001,
+                                                                  "predicted_per_second":  0
+                                                              },
+                                                  "cachedFraction":  0.001284050261395946,
+                                                  "timingRelativeError":  1.7906321121326022E-16,
+                                                  "errorCode":  null,
+                                                  "slotErase":  "unavailable-501",
+                                                  "beforeGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31221,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1386
+                                                                },
+                                                  "afterGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31221,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1386
+                                                               }
+                                              },
+                                              {
+                                                  "run":  2,
+                                                  "ok":  true,
+                                                  "wallSeconds":  13.255,
+                                                  "promptTokens":  32709,
+                                                  "completionTokens":  1,
+                                                  "timings":  {
+                                                                  "cache_n":  42,
+                                                                  "prompt_n":  32667,
+                                                                  "prompt_ms":  12870.605,
+                                                                  "prompt_per_second":  2538.109125406304,
+                                                                  "predicted_n":  1,
+                                                                  "predicted_ms":  0.001,
+                                                                  "predicted_per_second":  0
+                                                              },
+                                                  "cachedFraction":  0.001284050261395946,
+                                                  "timingRelativeError":  0,
+                                                  "errorCode":  null,
+                                                  "slotErase":  "unavailable-501",
+                                                  "beforeGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31221,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1386
+                                                                },
+                                                  "afterGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31221,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1386
+                                                               }
+                                              },
+                                              {
+                                                  "run":  3,
+                                                  "ok":  true,
+                                                  "wallSeconds":  13.264,
+                                                  "promptTokens":  32709,
+                                                  "completionTokens":  1,
+                                                  "timings":  {
+                                                                  "cache_n":  42,
+                                                                  "prompt_n":  32667,
+                                                                  "prompt_ms":  12889.408,
+                                                                  "prompt_per_second":  2534.406545281211,
+                                                                  "predicted_n":  1,
+                                                                  "predicted_ms":  0.001,
+                                                                  "predicted_per_second":  0
+                                                              },
+                                                  "cachedFraction":  0.001284050261395946,
+                                                  "timingRelativeError":  0,
+                                                  "errorCode":  null,
+                                                  "slotErase":  "unavailable-501",
+                                                  "beforeGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31221,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1386
+                                                                },
+                                                  "afterGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31221,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1386
+                                                               }
+                                              }
+                                          ],
+                                 "summary":  {
+                                                 "runs":  3,
+                                                 "promptTokens":  32709,
+                                                 "mean":  {
+                                                              "prompt_n":  32667,
+                                                              "cache_n":  42,
+                                                              "prompt_ms":  12874.369,
+                                                              "prompt_per_second":  2537.37
+                                                          },
+                                                 "best":  {
+                                                              "run":  1,
+                                                              "prompt_n":  32667,
+                                                              "cache_n":  42,
+                                                              "prompt_ms":  12863.094,
+                                                              "prompt_per_second":  2539.59
+                                                          },
+                                                 "worstPrefillTokensPerSecond":  2534.41,
+                                                 "averageWallSeconds":  13.215,
+                                                 "averageEndpointSampledGpuUsedMiB":  31221,
+                                                 "maximumEndpointSampledGpuUsedMiB":  31221
+                                             }
+                             },
+                   "65536":  {
+                                 "targetTokens":  65536,
+                                 "valid":  true,
+                                 "runs":  [
+                                              {
+                                                  "run":  1,
+                                                  "ok":  true,
+                                                  "wallSeconds":  32.581,
+                                                  "promptTokens":  65477,
+                                                  "completionTokens":  1,
+                                                  "timings":  {
+                                                                  "cache_n":  42,
+                                                                  "prompt_n":  65435,
+                                                                  "prompt_ms":  32198.801,
+                                                                  "prompt_per_second":  2032.2185288824885,
+                                                                  "predicted_n":  1,
+                                                                  "predicted_ms":  0.001,
+                                                                  "predicted_per_second":  0
+                                                              },
+                                                  "cachedFraction":  0.00064144661484185283,
+                                                  "timingRelativeError":  1.1188446134691244E-16,
+                                                  "errorCode":  null,
+                                                  "slotErase":  "unavailable-501",
+                                                  "beforeGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31221,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1386
+                                                                },
+                                                  "afterGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31221,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1386
+                                                               }
+                                              },
+                                              {
+                                                  "run":  2,
+                                                  "ok":  true,
+                                                  "wallSeconds":  32.975,
+                                                  "promptTokens":  65477,
+                                                  "completionTokens":  1,
+                                                  "timings":  {
+                                                                  "cache_n":  42,
+                                                                  "prompt_n":  65435,
+                                                                  "prompt_ms":  32308.431,
+                                                                  "prompt_per_second":  2025.3227400612552,
+                                                                  "predicted_n":  1,
+                                                                  "predicted_ms":  0.001,
+                                                                  "predicted_per_second":  0
+                                                              },
+                                                  "cachedFraction":  0.00064144661484185283,
+                                                  "timingRelativeError":  0,
+                                                  "errorCode":  null,
+                                                  "slotErase":  "unavailable-501",
+                                                  "beforeGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31221,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1386
+                                                                },
+                                                  "afterGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31221,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1386
+                                                               }
+                                              },
+                                              {
+                                                  "run":  3,
+                                                  "ok":  true,
+                                                  "wallSeconds":  33.11,
+                                                  "promptTokens":  65477,
+                                                  "completionTokens":  1,
+                                                  "timings":  {
+                                                                  "cache_n":  42,
+                                                                  "prompt_n":  65435,
+                                                                  "prompt_ms":  32285.589,
+                                                                  "prompt_per_second":  2026.7556524987044,
+                                                                  "predicted_n":  1,
+                                                                  "predicted_ms":  0.001,
+                                                                  "predicted_per_second":  0
+                                                              },
+                                                  "cachedFraction":  0.00064144661484185283,
+                                                  "timingRelativeError":  0,
+                                                  "errorCode":  null,
+                                                  "slotErase":  "unavailable-501",
+                                                  "beforeGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31221,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1386
+                                                                },
+                                                  "afterGpu":  {
+                                                                   "name":  "NVIDIA GeForce RTX 5090",
+                                                                   "usedMiB":  31221,
+                                                                   "totalMiB":  32607,
+                                                                   "freeMiB":  1386
+                                                               }
+                                              }
+                                          ],
+                                 "summary":  {
+                                                 "runs":  3,
+                                                 "promptTokens":  65477,
+                                                 "mean":  {
+                                                              "prompt_n":  65435,
+                                                              "cache_n":  42,
+                                                              "prompt_ms":  32264.274,
+                                                              "prompt_per_second":  2028.1
+                                                          },
+                                                 "best":  {
+                                                              "run":  1,
+                                                              "prompt_n":  65435,
+                                                              "cache_n":  42,
+                                                              "prompt_ms":  32198.801,
+                                                              "prompt_per_second":  2032.22
+                                                          },
+                                                 "worstPrefillTokensPerSecond":  2025.32,
+                                                 "averageWallSeconds":  32.889,
+                                                 "averageEndpointSampledGpuUsedMiB":  31221,
+                                                 "maximumEndpointSampledGpuUsedMiB":  31221
+                                             }
+                             },
+                   "131072":  {
+                                  "targetTokens":  131072,
+                                  "valid":  true,
+                                  "runs":  [
+                                               {
+                                                   "run":  1,
+                                                   "ok":  true,
+                                                   "wallSeconds":  91.068,
+                                                   "promptTokens":  131014,
+                                                   "completionTokens":  1,
+                                                   "timings":  {
+                                                                   "cache_n":  42,
+                                                                   "prompt_n":  130972,
+                                                                   "prompt_ms":  90361.488,
+                                                                   "prompt_per_second":  1449.4227894963394,
+                                                                   "predicted_n":  1,
+                                                                   "predicted_ms":  0.001,
+                                                                   "predicted_per_second":  0
+                                                               },
+                                                   "cachedFraction":  0.00032057642694673853,
+                                                   "timingRelativeError":  0,
+                                                   "errorCode":  null,
+                                                   "slotErase":  "unavailable-501",
+                                                   "beforeGpu":  {
+                                                                     "name":  "NVIDIA GeForce RTX 5090",
+                                                                     "usedMiB":  31221,
+                                                                     "totalMiB":  32607,
+                                                                     "freeMiB":  1386
+                                                                 },
+                                                   "afterGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31221,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1386
+                                                                }
+                                               },
+                                               {
+                                                   "run":  2,
+                                                   "ok":  true,
+                                                   "wallSeconds":  91.523,
+                                                   "promptTokens":  131014,
+                                                   "completionTokens":  1,
+                                                   "timings":  {
+                                                                   "cache_n":  42,
+                                                                   "prompt_n":  130972,
+                                                                   "prompt_ms":  90292.982,
+                                                                   "prompt_per_second":  1450.5224780371082,
+                                                                   "predicted_n":  1,
+                                                                   "predicted_ms":  0.001,
+                                                                   "predicted_per_second":  0
+                                                               },
+                                                   "cachedFraction":  0.00032057642694673853,
+                                                   "timingRelativeError":  1.5675294860023206E-16,
+                                                   "errorCode":  null,
+                                                   "slotErase":  "unavailable-501",
+                                                   "beforeGpu":  {
+                                                                     "name":  "NVIDIA GeForce RTX 5090",
+                                                                     "usedMiB":  31221,
+                                                                     "totalMiB":  32607,
+                                                                     "freeMiB":  1386
+                                                                 },
+                                                   "afterGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31221,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1386
+                                                                }
+                                               },
+                                               {
+                                                   "run":  3,
+                                                   "ok":  true,
+                                                   "wallSeconds":  91.58,
+                                                   "promptTokens":  131014,
+                                                   "completionTokens":  1,
+                                                   "timings":  {
+                                                                   "cache_n":  42,
+                                                                   "prompt_n":  130972,
+                                                                   "prompt_ms":  90365.521,
+                                                                   "prompt_per_second":  1449.3581019690021,
+                                                                   "predicted_n":  1,
+                                                                   "predicted_ms":  0.001,
+                                                                   "predicted_per_second":  0
+                                                               },
+                                                   "cachedFraction":  0.00032057642694673853,
+                                                   "timingRelativeError":  1.5687887978432467E-16,
+                                                   "errorCode":  null,
+                                                   "slotErase":  "unavailable-501",
+                                                   "beforeGpu":  {
+                                                                     "name":  "NVIDIA GeForce RTX 5090",
+                                                                     "usedMiB":  31221,
+                                                                     "totalMiB":  32607,
+                                                                     "freeMiB":  1386
+                                                                 },
+                                                   "afterGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31221,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1386
+                                                                }
+                                               }
+                                           ],
+                                  "summary":  {
+                                                  "runs":  3,
+                                                  "promptTokens":  131014,
+                                                  "mean":  {
+                                                               "prompt_n":  130972,
+                                                               "cache_n":  42,
+                                                               "prompt_ms":  90339.997,
+                                                               "prompt_per_second":  1449.77
+                                                           },
+                                                  "best":  {
+                                                               "run":  2,
+                                                               "prompt_n":  130972,
+                                                               "cache_n":  42,
+                                                               "prompt_ms":  90292.982,
+                                                               "prompt_per_second":  1450.52
+                                                           },
+                                                  "worstPrefillTokensPerSecond":  1449.36,
+                                                  "averageWallSeconds":  91.39,
+                                                  "averageEndpointSampledGpuUsedMiB":  31221,
+                                                  "maximumEndpointSampledGpuUsedMiB":  31221
+                                              }
+                              },
+                   "163840":  {
+                                  "targetTokens":  163840,
+                                  "valid":  true,
+                                  "runs":  [
+                                               {
+                                                   "run":  1,
+                                                   "ok":  true,
+                                                   "wallSeconds":  129.959,
+                                                   "promptTokens":  163782,
+                                                   "completionTokens":  1,
+                                                   "timings":  {
+                                                                   "cache_n":  42,
+                                                                   "prompt_n":  163740,
+                                                                   "prompt_ms":  128765.249,
+                                                                   "prompt_per_second":  1271.6163815285288,
+                                                                   "predicted_n":  1,
+                                                                   "predicted_ms":  0.001,
+                                                                   "predicted_per_second":  0
+                                                               },
+                                                   "cachedFraction":  0.00025643843645821885,
+                                                   "timingRelativeError":  0,
+                                                   "errorCode":  null,
+                                                   "slotErase":  "unavailable-501",
+                                                   "beforeGpu":  {
+                                                                     "name":  "NVIDIA GeForce RTX 5090",
+                                                                     "usedMiB":  31221,
+                                                                     "totalMiB":  32607,
+                                                                     "freeMiB":  1386
+                                                                 },
+                                                   "afterGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31222,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1385
+                                                                }
+                                               },
+                                               {
+                                                   "run":  2,
+                                                   "ok":  true,
+                                                   "wallSeconds":  130.145,
+                                                   "promptTokens":  163782,
+                                                   "completionTokens":  1,
+                                                   "timings":  {
+                                                                   "cache_n":  42,
+                                                                   "prompt_n":  163740,
+                                                                   "prompt_ms":  128764.566,
+                                                                   "prompt_per_second":  1271.6231265051597,
+                                                                   "predicted_n":  1,
+                                                                   "predicted_ms":  0.001,
+                                                                   "predicted_per_second":  0
+                                                               },
+                                                   "cachedFraction":  0.00025643843645821885,
+                                                   "timingRelativeError":  0,
+                                                   "errorCode":  null,
+                                                   "slotErase":  "unavailable-501",
+                                                   "beforeGpu":  {
+                                                                     "name":  "NVIDIA GeForce RTX 5090",
+                                                                     "usedMiB":  31222,
+                                                                     "totalMiB":  32607,
+                                                                     "freeMiB":  1385
+                                                                 },
+                                                   "afterGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31222,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1385
+                                                                }
+                                               },
+                                               {
+                                                   "run":  3,
+                                                   "ok":  true,
+                                                   "wallSeconds":  130.286,
+                                                   "promptTokens":  163782,
+                                                   "completionTokens":  1,
+                                                   "timings":  {
+                                                                   "cache_n":  42,
+                                                                   "prompt_n":  163740,
+                                                                   "prompt_ms":  128772.402,
+                                                                   "prompt_per_second":  1271.5457462694528,
+                                                                   "predicted_n":  1,
+                                                                   "predicted_ms":  0.001,
+                                                                   "predicted_per_second":  0
+                                                               },
+                                                   "cachedFraction":  0.00025643843645821885,
+                                                   "timingRelativeError":  1.78816748127479E-16,
+                                                   "errorCode":  null,
+                                                   "slotErase":  "unavailable-501",
+                                                   "beforeGpu":  {
+                                                                     "name":  "NVIDIA GeForce RTX 5090",
+                                                                     "usedMiB":  31222,
+                                                                     "totalMiB":  32607,
+                                                                     "freeMiB":  1385
+                                                                 },
+                                                   "afterGpu":  {
+                                                                    "name":  "NVIDIA GeForce RTX 5090",
+                                                                    "usedMiB":  31271,
+                                                                    "totalMiB":  32607,
+                                                                    "freeMiB":  1336
+                                                                }
+                                               }
+                                           ],
+                                  "summary":  {
+                                                  "runs":  3,
+                                                  "promptTokens":  163782,
+                                                  "mean":  {
+                                                               "prompt_n":  163740,
+                                                               "cache_n":  42,
+                                                               "prompt_ms":  128767.406,
+                                                               "prompt_per_second":  1271.6
+                                                           },
+                                                  "best":  {
+                                                               "run":  2,
+                                                               "prompt_n":  163740,
+                                                               "cache_n":  42,
+                                                               "prompt_ms":  128764.566,
+                                                               "prompt_per_second":  1271.62
+                                                           },
+                                                  "worstPrefillTokensPerSecond":  1271.55,
+                                                  "averageWallSeconds":  130.13,
+                                                  "averageEndpointSampledGpuUsedMiB":  31230,
+                                                  "maximumEndpointSampledGpuUsedMiB":  31271
+                                              }
+                              }
+               }
+}
